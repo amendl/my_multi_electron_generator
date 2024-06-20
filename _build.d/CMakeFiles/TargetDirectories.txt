@@ -1,0 +1,8 @@
+/sps/nemo/scratch/amendl/AI/ExAegir/_build.d/CMakeFiles/install/strip.dir
+/sps/nemo/scratch/amendl/AI/ExAegir/_build.d/CMakeFiles/install/local.dir
+/sps/nemo/scratch/amendl/AI/ExAegir/_build.d/CMakeFiles/rebuild_cache.dir
+/sps/nemo/scratch/amendl/AI/ExAegir/_build.d/CMakeFiles/edit_cache.dir
+/sps/nemo/scratch/amendl/AI/ExAegir/_build.d/CMakeFiles/runexaegir.dir
+/sps/nemo/scratch/amendl/AI/ExAegir/_build.d/CMakeFiles/install.dir
+/sps/nemo/scratch/amendl/AI/ExAegir/_build.d/CMakeFiles/list_install_components.dir
+/sps/nemo/scratch/amendl/AI/ExAegir/_build.d/CMakeFiles/exaegir.dir

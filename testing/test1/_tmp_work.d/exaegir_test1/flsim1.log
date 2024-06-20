@@ -1,0 +1,1553 @@
+[devel] => plugin 'exaegir'
+[devel] Plugin section 'exaegir' : 
+[devel] |-- Name : 'autoload'
+[devel] |   |-- Type  : boolean (scalar)
+[devel] |   `-- Value : true
+[devel] `-- Name : 'directory'
+[devel]     |-- Type  : string (scalar) [explicit path]
+[devel]     `-- Value : '_tmp_work.d/exaegir_test1/_exaegir_plugin.d'
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'exaegir'...
+[log] [exaegir_init]: Loading the 'exaegir' plugin library (version 1.0.0)...
+[log] [exaegir_init]: Bayeux is already initialized.
+[log] [exaegir_init]: List of registered allocators/functors for label "genbb::i_genbb/__system__" : 
+[log] [exaegir_init]: |-- Label   : 'genbb::i_genbb/__system__'
+[log] [exaegir_init]: |-- Logging threshold : fatal
+[log] [exaegir_init]: `-- Registered factories : 15
+[log] [exaegir_init]:     |-- ID: "exaegir::dummy_event_generator" @ 0x2a0f460
+[log] [exaegir_init]:     |-- ID: "exaegir::dummy_event_generator2" @ 0x2a0b480
+[log] [exaegir_init]:     |-- ID: "genbb::combined_particle_generator" @ 0x2830c80
+[log] [exaegir_init]:     |-- ID: "genbb::from_file_generator" @ 0x2841000
+[log] [exaegir_init]:     |-- ID: "genbb::genbb_mgr" @ 0x2830320
+[log] [exaegir_init]:     |-- ID: "genbb::lorentz_boost_wrapper" @ 0x28423d0
+[log] [exaegir_init]:     |-- ID: "genbb::nuclear_decay_generator" @ 0x2841130
+[log] [exaegir_init]:     |-- ID: "genbb::poi_generator" @ 0x2837210
+[log] [exaegir_init]:     |-- ID: "genbb::save_to_file_wrapper" @ 0x2841ca0
+[log] [exaegir_init]:     |-- ID: "genbb::single_particle_generator" @ 0x282b160
+[log] [exaegir_init]:     |-- ID: "genbb::time_slicer_generator" @ 0x28356e0
+[log] [exaegir_init]:     |-- ID: "genbb::wdecay0" @ 0x282a920
+[log] [exaegir_init]:     |-- ID: "snemo::simulation::arbitrary_event_generator_injector" @ 0x2965030
+[log] [exaegir_init]:     |-- ID: "snemo::simulation::cosmic_muon_generator" @ 0x2964760
+[log] [exaegir_init]:     `-- ID: "snemo::simulation::from_ascii_files_event_generator" @ 0x29651c0
+[log] [exaegir_init]: The 'exaegir' plugin library has been loaded.
+[notice:virtual void mctools::g4::manager::_init_core():1186] Main manager settings...
+[notice:void mctools::g4::manager::add_supported_output_profile(const string&, const string&):744] Output profile 'calo_details' is supported.
+[notice:void mctools::g4::manager::add_supported_output_profile(const string&, const string&):744] Output profile 'tracker_details' is supported.
+[notice:void mctools::g4::manager::add_supported_output_profile(const string&, const string&):744] Output profile 'source_details' is supported.
+[notice:void mctools::g4::manager::add_supported_output_profile(const string&, const string&):744] Output profile 'all_details' is supported.
+[notice:void mctools::g4::manager::activate_output_profile(const string&):765] Activate the output profile 'all_details'
+[notice:void mctools::g4::manager::_init_seeds():1611] Using registered seed for 'MGR' : 3
+[notice:void mctools::g4::manager::_init_seeds():1620] Using registered seed for 'VG' : 2
+[notice:void mctools::g4::manager::_init_seeds():1629] Using registered seed for 'EG' : 1
+[notice:void mctools::g4::manager::_init_seeds():1638] Using registered seed for 'SHPF' : 4
+[notice:virtual void mctools::g4::manager::_init_prngs():1787] Setting the HepRandomEngine to 'mctools::g4::g4_prng'...
+[notice:virtual void mctools::g4::manager::_init_geometry():1356] Geometry manager settings...
+[notice:virtual void mctools::g4::manager::_init_geometry():1358] Use external geometry manager...
+[notice:virtual void mctools::g4::manager::_init_vertex_generator():1389] Vertex generator settings...
+[notice:virtual void mctools::g4::manager::_init_event_generator():1438] Primary event generator settings...
+Generators: :
+[debug] :|-- dummy                          : Generator using a 'exaegir::dummy_event_generator';group=non official : exaegir::dummy_event_generator (not initialized)
+[debug] :`-- dummy2                         : Generator using a 'exaegir::dummy_event_generator2';group=non official : exaegir::dummy_event_generator2 (not initialized)
+
+*************************************************************
+ Geant4 version Name: geant4-09-06-patch-04    (30-January-2015)
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+HepRandomEngine::put called -- no effect!
+[notice:virtual void mctools::g4::manager::_init_detector_construction():1478] Detector construction...
+[notice:virtual void mctools::g4::manager::_init_physics_list():1492] Physics list initialization...
+[notice:virtual void mctools::g4::manager::_init_run_action():1506] Run action initialization...
+[notice:virtual void mctools::g4::manager::_init_event_action():1532] Event action initialization...
+[notice:virtual void mctools::g4::manager::_init_primary_generator_action():1545] Primary generator action initialization...
+[notice:virtual void mctools::g4::manager::_init_tracking_action():1564] Tracking action initialization...
+[notice:virtual void mctools::g4::manager::_init_stepping_action():1574] Stepping action initialization...
+[notice:virtual void mctools::g4::manager::_init_stacking_action():1584] Stacking action initialization...
+[notice:virtual void mctools::g4::manager::initialize_impl():952] G4 kernel initialization...
+G4GDML: Reading '/tmp/amendl/snemodemo_mc_g4.d/mctools_g4_geometry.gdml.49kI2I'...
+G4GDML: Reading definitions...
+G4GDML: Reading materials...
+G4GDML: Reading solids...
+G4GDML: Reading structure...
+G4GDML: Reading setup...
+G4GDML: Reading '/tmp/amendl/snemodemo_mc_g4.d/mctools_g4_geometry.gdml.49kI2I' done!
+[notice] SHPF: Step hit processor: 'calorimeter.hit_processor' (instantiated) :
+[notice] |-- Logging priority   : fatal
+[notice] |-- Name               : 'calorimeter.hit_processor'
+[notice] |-- Hit category       : 'calo'
+[notice] |-- Sensitive category : 'calorimeter_SD'
+[notice] |-- Geometry manager   : 0x2a38810
+[notice] |-- Auxiliary properties : 
+[notice] |   `-- Name : 'sensitive.category'
+[notice] |       |-- Type  : string (scalar)
+[notice] |       `-- Value : 'calorimeter_SD'
+[notice] |-- Private pool : 0x45b0d90
+[notice] |-- Pool owner   : 0
+[notice] |-- Pool         : 0x45b0d90
+[notice] |-- Time range : 1 (ns)
+[notice] |-- Space range : 10 (mm)
+[notice] |-- Mapping category : 'calorimeter_block'
+[notice] |-- Mapping    : 0x2a38bd0
+[notice] |-- Categories : 0x2a38b68 [54]
+[notice] `-- Calorimeter block type : 1302
+[notice] SHPF: Step hit processor: 'calorimeter.visu.hit_processor' (instantiated) :
+[notice] |-- Logging priority   : error
+[notice] |-- Name               : 'calorimeter.visu.hit_processor'
+[notice] |-- Hit category       : '__visu.tracks'
+[notice] |-- Sensitive category : 'calorimeter_SD'
+[notice] |-- Geometry manager   : 0x2a38810
+[notice] |-- Auxiliary properties : 
+[notice] |   |-- Name : 'output_profiles.matching'
+[notice] |   |   |-- Type  : string[2] (vector)
+[notice] |   |   |-- Value[0] : 'calo_details'
+[notice] |   |   `-- Value[1] : 'all_details'
+[notice] |   `-- Name : 'sensitive.category'
+[notice] |       |-- Type  : string (scalar)
+[notice] |       `-- Value : 'calorimeter_SD'
+[notice] |-- Private pool : 0
+[notice] |-- Pool owner   : 0
+[notice] `-- Pool         : 0
+[notice] SHPF: Step hit processor: 'gg.hit_processor' (instantiated) :
+[notice] |-- Logging priority   : fatal
+[notice] |-- Name               : 'gg.hit_processor'
+[notice] |-- Hit category       : 'gg'
+[notice] |-- Sensitive category : 'tracker_SD'
+[notice] |-- Geometry manager   : 0x2a38810
+[notice] |-- Auxiliary properties : 
+[notice] |   `-- Name : 'sensitive.category'
+[notice] |       |-- Type  : string (scalar)
+[notice] |       `-- Value : 'tracker_SD'
+[notice] |-- Private pool : 0
+[notice] |-- Pool owner   : 0
+[notice] `-- Pool         : 0
+[notice] SHPF: Step hit processor: 'gveto.hit_processor' (instantiated) :
+[notice] |-- Logging priority   : fatal
+[notice] |-- Name               : 'gveto.hit_processor'
+[notice] |-- Hit category       : 'gveto'
+[notice] |-- Sensitive category : 'gveto_SD'
+[notice] |-- Geometry manager   : 0x2a38810
+[notice] |-- Auxiliary properties : 
+[notice] |   `-- Name : 'sensitive.category'
+[notice] |       |-- Type  : string (scalar)
+[notice] |       `-- Value : 'gveto_SD'
+[notice] |-- Private pool : 0x45dc190
+[notice] |-- Pool owner   : 0
+[notice] |-- Pool         : 0x45dc190
+[notice] |-- Time range : 1 (ns)
+[notice] |-- Space range : 10 (mm)
+[notice] |-- Mapping category : 'gveto_block'
+[notice] |-- Mapping    : 0x2a38bd0
+[notice] |-- Categories : 0x2a38b68 [54]
+[notice] `-- Calorimeter block type : 1252
+[notice] SHPF: Step hit processor: 'gveto.visu.hit_processor' (instantiated) :
+[notice] |-- Logging priority   : error
+[notice] |-- Name               : 'gveto.visu.hit_processor'
+[notice] |-- Hit category       : '__visu.tracks'
+[notice] |-- Sensitive category : 'gveto_SD'
+[notice] |-- Geometry manager   : 0x2a38810
+[notice] |-- Auxiliary properties : 
+[notice] |   |-- Name : 'output_profiles.matching'
+[notice] |   |   |-- Type  : string[2] (vector)
+[notice] |   |   |-- Value[0] : 'calo_details'
+[notice] |   |   `-- Value[1] : 'all_details'
+[notice] |   `-- Name : 'sensitive.category'
+[notice] |       |-- Type  : string (scalar)
+[notice] |       `-- Value : 'gveto_SD'
+[notice] |-- Private pool : 0
+[notice] |-- Pool owner   : 0
+[notice] `-- Pool         : 0
+[notice] SHPF: Step hit processor: 'source.visu.hit_processor' (instantiated) :
+[notice] |-- Logging priority   : error
+[notice] |-- Name               : 'source.visu.hit_processor'
+[notice] |-- Hit category       : '__visu.tracks'
+[notice] |-- Sensitive category : '__source_SD'
+[notice] |-- Geometry manager   : 0x2a38810
+[notice] |-- Auxiliary properties : 
+[notice] |   |-- Name : 'geometry.volumes.names'
+[notice] |   |   |-- Type  : string[3] (vector)
+[notice] |   |   |-- Value[0] : 'short_film.realistic.model.log'
+[notice] |   |   |-- Value[1] : 'source_film.realistic.model.log'
+[notice] |   |   `-- Value[2] : 'snemo_strip_wrapper_film.realistic.flat.model.log'
+[notice] |   |-- Name : 'geometry.volumes.regex'
+[notice] |   |   |-- Type  : string[5] (vector)
+[notice] |   |   |-- Value[0] : 'snemo_foil_(.*)_pad_(.*).model.log'
+[notice] |   |   |-- Value[1] : 'snemo_source_(.*).model.log'
+[notice] |   |   |-- Value[2] : 'snemo_strip_(.*).model.log'
+[notice] |   |   |-- Value[3] : 'snemo_strip_(.*)_pad_(.*).realistic.model.log'
+[notice] |   |   `-- Value[4] : 'snemo_strip_(.*)_pad_(.*).flat.model.log'
+[notice] |   |-- Name : 'output_profiles.matching'
+[notice] |   |   |-- Type  : string[2] (vector)
+[notice] |   |   |-- Value[0] : 'source_details'
+[notice] |   |   `-- Value[1] : 'all_details'
+[notice] |   |-- Name : 'sensitive.category'
+[notice] |   |   |-- Type  : string (scalar)
+[notice] |   |   `-- Value : '__source_SD'
+[notice] |   |-- Name : 'sensitive.record_boundaries'
+[notice] |   |   |-- Type  : boolean (scalar)
+[notice] |   |   `-- Value : true
+[notice] |   |-- Name : 'sensitive.record_creator_process'
+[notice] |   |   |-- Type  : boolean (scalar)
+[notice] |   |   `-- Value : true
+[notice] |   |-- Name : 'sensitive.record_material'
+[notice] |   |   |-- Type  : boolean (scalar)
+[notice] |   |   `-- Value : true
+[notice] |   |-- Name : 'sensitive.record_momentum'
+[notice] |   |   |-- Type  : boolean (scalar)
+[notice] |   |   `-- Value : true
+[notice] |   |-- Name : 'sensitive.record_primary_particle'
+[notice] |   |   |-- Type  : boolean (scalar)
+[notice] |   |   `-- Value : true
+[notice] |   |-- Name : 'sensitive.record_sensitive_category'
+[notice] |   |   |-- Type  : boolean (scalar)
+[notice] |   |   `-- Value : true
+[notice] |   `-- Name : 'sensitive.record_track_id'
+[notice] |       |-- Type  : boolean (scalar)
+[notice] |       `-- Value : true
+[notice] |-- Private pool : 0
+[notice] |-- Pool owner   : 0
+[notice] `-- Pool         : 0
+[notice] SHPF: Step hit processor: 'tracker.visu.hit_processor' (instantiated) :
+[notice] |-- Logging priority   : error
+[notice] |-- Name               : 'tracker.visu.hit_processor'
+[notice] |-- Hit category       : '__visu.tracks'
+[notice] |-- Sensitive category : 'tracker_SD'
+[notice] |-- Geometry manager   : 0x2a38810
+[notice] |-- Auxiliary properties : 
+[notice] |   |-- Name : 'output_profiles.matching'
+[notice] |   |   |-- Type  : string[2] (vector)
+[notice] |   |   |-- Value[0] : 'tracker_details'
+[notice] |   |   `-- Value[1] : 'all_details'
+[notice] |   `-- Name : 'sensitive.category'
+[notice] |       |-- Type  : string (scalar)
+[notice] |       `-- Value : 'tracker_SD'
+[notice] |-- Private pool : 0
+[notice] |-- Pool owner   : 0
+[notice] `-- Pool         : 0
+[notice] SHPF: Step hit processor: 'tracking_gas.visu.hit_processor' (instantiated) :
+[notice] |-- Logging priority   : error
+[notice] |-- Name               : 'tracking_gas.visu.hit_processor'
+[notice] |-- Hit category       : '__visu.tracks'
+[notice] |-- Sensitive category : '__tracking_gas_SD'
+[notice] |-- Geometry manager   : 0x2a38810
+[notice] |-- Auxiliary properties : 
+[notice] |   |-- Name : 'geometry.volumes.with_materials'
+[notice] |   |   |-- Type  : string[1] (vector)
+[notice] |   |   `-- Value[0] : 'tracking_gas'
+[notice] |   |-- Name : 'output_profiles.matching'
+[notice] |   |   |-- Type  : string[2] (vector)
+[notice] |   |   |-- Value[0] : 'tracker_details'
+[notice] |   |   `-- Value[1] : 'all_details'
+[notice] |   |-- Name : 'sensitive.category'
+[notice] |   |   |-- Type  : string (scalar)
+[notice] |   |   `-- Value : '__tracking_gas_SD'
+[notice] |   |-- Name : 'sensitive.record_boundaries'
+[notice] |   |   |-- Type  : boolean (scalar)
+[notice] |   |   `-- Value : true
+[notice] |   |-- Name : 'sensitive.record_creator_process'
+[notice] |   |   |-- Type  : boolean (scalar)
+[notice] |   |   `-- Value : true
+[notice] |   |-- Name : 'sensitive.record_material'
+[notice] |   |   |-- Type  : boolean (scalar)
+[notice] |   |   `-- Value : true
+[notice] |   |-- Name : 'sensitive.record_momentum'
+[notice] |   |   |-- Type  : boolean (scalar)
+[notice] |   |   `-- Value : true
+[notice] |   |-- Name : 'sensitive.record_primary_particle'
+[notice] |   |   |-- Type  : boolean (scalar)
+[notice] |   |   `-- Value : true
+[notice] |   |-- Name : 'sensitive.record_sensitive_category'
+[notice] |   |   |-- Type  : boolean (scalar)
+[notice] |   |   `-- Value : true
+[notice] |   `-- Name : 'sensitive.record_track_id'
+[notice] |       |-- Type  : boolean (scalar)
+[notice] |       `-- Value : true
+[notice] |-- Private pool : 0
+[notice] |-- Pool owner   : 0
+[notice] `-- Pool         : 0
+[notice] SHPF: Step hit processor: 'xcalorimeter.hit_processor' (instantiated) :
+[notice] |-- Logging priority   : fatal
+[notice] |-- Name               : 'xcalorimeter.hit_processor'
+[notice] |-- Hit category       : 'xcalo'
+[notice] |-- Sensitive category : 'xcalorimeter_SD'
+[notice] |-- Geometry manager   : 0x2a38810
+[notice] |-- Auxiliary properties : 
+[notice] |   `-- Name : 'sensitive.category'
+[notice] |       |-- Type  : string (scalar)
+[notice] |       `-- Value : 'xcalorimeter_SD'
+[notice] |-- Private pool : 0x45aee10
+[notice] |-- Pool owner   : 0
+[notice] |-- Pool         : 0x45aee10
+[notice] |-- Time range : 1 (ns)
+[notice] |-- Space range : 10 (mm)
+[notice] |-- Mapping category : 'xcalo_block'
+[notice] |-- Mapping    : 0x2a38bd0
+[notice] |-- Categories : 0x2a38b68 [54]
+[notice] `-- Calorimeter block type : 1232
+[notice] SHPF: Step hit processor: 'xcalorimeter.visu.hit_processor' (instantiated) :
+[notice] |-- Logging priority   : error
+[notice] |-- Name               : 'xcalorimeter.visu.hit_processor'
+[notice] |-- Hit category       : '__visu.tracks'
+[notice] |-- Sensitive category : 'xcalorimeter_SD'
+[notice] |-- Geometry manager   : 0x2a38810
+[notice] |-- Auxiliary properties : 
+[notice] |   |-- Name : 'output_profiles.matching'
+[notice] |   |   |-- Type  : string[2] (vector)
+[notice] |   |   |-- Value[0] : 'calo_details'
+[notice] |   |   `-- Value[1] : 'all_details'
+[notice] |   `-- Name : 'sensitive.category'
+[notice] |       |-- Type  : string (scalar)
+[notice] |       `-- Value : 'xcalorimeter_SD'
+[notice] |-- Private pool : 0
+[notice] |-- Pool owner   : 0
+[notice] `-- Pool         : 0
+[warning:void mctools::g4::em_field_g4_stuff::initialize(const datatools::properties&):257] Using default EM field stepper for field labelled 'module'!
+[warning:void mctools::g4::em_field_g4_stuff::initialize(const datatools::properties&):334] Field labelled 'module' is propagated to daughter volumes!
+[notice:static void mctools::g4::manager_parameters::setup(const mctools::g4::manager_parameters&, mctools::g4::manager&):270] Simulation manager has been configured and initialized.
+[notice:void mctools::g4::manager::run_simulation():188] Starting the simulation...
+[notice:virtual void mctools::g4::manager::run_simulation_impl():1051] Entering batch mode...
+[notice:virtual void mctools::g4::manager::run_simulation_impl():1063] Entering automatic mode...
+[notice:virtual void mctools::g4::manager::run_simulation_impl():1099] G4 command = /run/beamOn 1000000000
+
+phot:   for  gamma    SubType= 12
+      LambdaPrime table from 200 keV to 10 TeV in 54 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       PhotoElectric :  Emin=        0 eV    Emax=       10 TeV   AngularGenSauterGavrila
+
+compt:   for  gamma    SubType= 13
+      Lambda table from 100 eV  to 1 MeV in 28 bins, spline: 1
+      LambdaPrime table from 1 MeV to 10 TeV in 49 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       Klein-Nishina :  Emin=        0 eV    Emax=       10 TeV
+
+conv:   for  gamma    SubType= 14
+      Lambda table from 1.022 MeV to 10 TeV in 49 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        BetheHeitler :  Emin=        0 eV    Emax=       80 GeV
+     BetheHeitlerLPM :  Emin=       80 GeV   Emax=       10 TeV
+
+msc:   for e-    SubType= 10
+      RangeFactor= 0.005, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+eIoni:   for  e-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+msc:   for e+    SubType= 10
+      RangeFactor= 0.005, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+eIoni:   for  e+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+annihil:   for  e+    SubType= 5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for proton    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  proton    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+msc:   for GenericIon    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV
+
+ionIoni:   for  GenericIon    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.01, dRoverRange= 0.1, integral: 1, fluct: 1, linLossLimit= 0.02
+      Stopping Power data for 17 ion/material pairs 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+msc:   for alpha    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+msc:   for anti_proton    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  anti_proton    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes     recalculation needed : No 
+ Material : vacuum
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1 keV    e-  1 keV    e+  1 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes     recalculation needed : No 
+ Material : lab_air
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1 keV    e-  1 keV    e+  1 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 2     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__iron
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  20.8129 keV    e-  1.28578 MeV    e+  1.21852 MeV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 3     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__concrete
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  4.87903 keV    e-  559.114 keV    e+  540.651 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 4     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__PTFE
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  4.35261 keV    e-  529.867 keV    e+  515.822 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 5     used in the geometry : Yes     recalculation needed : No 
+ Material : tracking_gas
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1 keV    e-  1 keV    e+  1 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 6     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__mylar
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  3.00838 keV    e-  421.697 keV    e+  405.042 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 7     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__PMMA
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.78478 keV    e-  391.667 keV    e+  378.733 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 8     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__nylon
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.66584 keV    e-  394.306 keV    e+  383.855 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 9     used in the geometry : Yes     recalculation needed : No 
+ Material : glass
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  5.36002 keV    e-  544.294 keV    e+  522.797 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 10     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__plexiglass
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.78478 keV    e-  391.667 keV    e+  378.733 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 11     used in the geometry : Yes     recalculation needed : No 
+ Material : RTV
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.9385 keV    e-  351.763 keV    e+  340.147 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 12     used in the geometry : Yes     recalculation needed : No 
+ Material : SBR
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.31517 keV    e-  335.609 keV    e+  326.713 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 13     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__copper
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  24.7837 keV    e-  1.39369 MeV    e+  1.32079 MeV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 14     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__delrin
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  3.17444 keV    e-  430.279 keV    e+  421.697 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 15     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__mu_metal
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  23.9653 keV    e-  1.42206 MeV    e+  1.32969 MeV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 16     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__beryllium-copper
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  23.6456 keV    e-  1.32079 MeV    e+  1.2517 MeV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 17     used in the geometry : Yes     recalculation needed : No 
+ Material : wire_metal
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  21.2365 keV    e-  1.30317 MeV    e+  1.235 MeV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 18     used in the geometry : Yes     recalculation needed : No 
+ Material : ENVINET_PS_scintillator
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.39423 keV    e-  358.922 keV    e+  344.747 keV proton 100 keV
+ Region(s) which use this couple : 
+    calorimeter
+
+Index : 19     used in the geometry : Yes     recalculation needed : No 
+ Material : Dubna_PS_scintillator
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.39423 keV    e-  358.922 keV    e+  344.747 keV proton 100 keV
+ Region(s) which use this couple : 
+    calorimeter
+
+Index : 20     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__copper
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  5.07964 keV    e-  160.325 keV    e+  1.32079 MeV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 21     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.597
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.06538 keV    e-  55.8577 keV    e+  344.747 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 22     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.444
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.94424 keV    e-  52.5815 keV    e+  322.354 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 23     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.531
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.0039 keV    e-  54.7436 keV    e+  335.609 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 24     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.578
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.03782 keV    e-  55.4839 keV    e+  340.147 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 25     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.317
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.85495 keV    e-  49.831 keV    e+  301.416 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 26     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.257
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.79973 keV    e-  48.5102 keV    e+  293.427 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 27     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.306
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.84254 keV    e-  49.831 keV    e+  301.416 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 28     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.408
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.9183 keV    e-  51.88 keV    e+  315.925 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 29     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.749
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.1503 keV    e-  58.9409 keV    e+  363.775 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 30     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.664
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.09331 keV    e-  57.3786 keV    e+  354.133 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 31     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.654
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.09331 keV    e-  56.9946 keV    e+  351.763 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 32     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.708
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.13591 keV    e-  58.5464 keV    e+  358.922 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 33     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.721
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.1503 keV    e-  58.5464 keV    e+  358.922 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 34     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.730
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.1503 keV    e-  58.5464 keV    e+  363.775 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 35     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.758
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.16479 keV    e-  58.9409 keV    e+  366.227 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 36     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.591
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.05156 keV    e-  55.8577 keV    e+  344.747 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 37     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.547
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.02418 keV    e-  54.7436 keV    e+  335.609 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 38     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.552
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.02418 keV    e-  55.1125 keV    e+  335.609 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 39     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.517
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.99718 keV    e-  54.3772 keV    e+  333.362 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 40     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.524
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.99718 keV    e-  54.7436 keV    e+  333.362 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 41     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.580
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.03782 keV    e-  55.4839 keV    e+  340.147 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 42     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.714
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.13591 keV    e-  58.5464 keV    e+  358.922 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 43     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.480
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.97053 keV    e-  53.6517 keV    e+  326.713 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 44     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.363
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.88004 keV    e-  51.1878 keV    e+  309.623 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 45     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.060
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.64374 keV    e-  44.157 keV    e+  263.532 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 46     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.030
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.61095 keV    e-  43.5679 keV    e+  256.547 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 47     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.088
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.66597 keV    e-  44.7542 keV    e+  265.308 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 48     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.333
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.85495 keV    e-  50.1668 keV    e+  305.492 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 49     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.300
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.83021 keV    e-  49.831 keV    e+  301.416 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 50     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.296
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.83021 keV    e-  49.831 keV    e+  299.399 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 51     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.648
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.09331 keV    e-  56.9946 keV    e+  351.763 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 52     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched97.5_pva0.0810_density2.300
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.52639 keV    e-  68.786 keV    e+  439.036 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 53     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched97_pva0.0801_density2.276
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.52639 keV    e-  68.786 keV    e+  436.097 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 54     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density2.068
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.37821 keV    e-  65.1879 keV    e+  407.771 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 55     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density2.093
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.39423 keV    e-  65.6271 keV    e+  413.285 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 56     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density2.096
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.39423 keV    e-  65.6271 keV    e+  416.07 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 57     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.972
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.29968 keV    e-  63.46 keV    e+  394.306 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 58     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.288
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.83021 keV    e-  49.1662 keV    e+  299.399 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 59     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.268
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.81796 keV    e-  49.1662 keV    e+  293.427 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 60     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.140
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.70559 keV    e-  45.9727 keV    e+  274.368 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 61     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.236
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.78169 keV    e-  48.5102 keV    e+  289.512 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 62     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.596
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.06538 keV    e-  55.8577 keV    e+  344.747 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 63     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.449
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.95734 keV    e-  52.9359 keV    e+  322.354 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 64     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.509
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.98381 keV    e-  54.0132 keV    e+  328.915 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 65     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.486
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.98381 keV    e-  54.0132 keV    e+  326.713 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 66     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.570
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.03782 keV    e-  55.4839 keV    e+  340.147 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 67     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.646
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.09331 keV    e-  56.9946 keV    e+  351.763 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 68     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.593
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.05156 keV    e-  55.8577 keV    e+  344.747 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 69     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.678
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.10741 keV    e-  57.7653 keV    e+  354.133 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 70     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.717
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.13591 keV    e-  58.5464 keV    e+  358.922 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 71     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.576
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.03782 keV    e-  55.4839 keV    e+  340.147 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 72     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.670
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.10741 keV    e-  57.7653 keV    e+  354.133 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 73     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.586
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.03782 keV    e-  55.4839 keV    e+  340.147 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 74     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.347
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.88004 keV    e-  50.8452 keV    e+  305.492 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 75     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.362
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.88004 keV    e-  51.1878 keV    e+  309.623 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 76     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.372
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.89271 keV    e-  51.1878 keV    e+  309.623 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 77     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.919
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.26899 keV    e-  62.1942 keV    e+  391.667 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 78     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.959
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.29968 keV    e-  63.46 keV    e+  394.306 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 79     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.899
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.26899 keV    e-  61.7779 keV    e+  383.855 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 80     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.795
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.17938 keV    e-  60.1404 keV    e+  373.68 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 81     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.886
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.25381 keV    e-  61.7779 keV    e+  383.855 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 82     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.952
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.29968 keV    e-  63.0352 keV    e+  394.306 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 83     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.299
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.83021 keV    e-  49.831 keV    e+  299.399 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 84     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.227
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.78169 keV    e-  48.1855 keV    e+  289.512 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 85     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.1_pva0.1000_density1.767
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.17938 keV    e-  59.7379 keV    e+  366.227 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 86     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.1_pva0.1000_density1.762
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.17938 keV    e-  59.5376 keV    e+  366.227 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 87     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.1_pva0.1000_density1.785
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.17938 keV    e-  60.1404 keV    e+  371.179 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 88     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.1_pva0.1000_density1.789
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.17938 keV    e-  60.1404 keV    e+  371.179 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 89     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.1_pva0.1000_density1.723
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.1503 keV    e-  58.5464 keV    e+  363.775 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 90     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.1_pva0.1000_density1.914
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.26899 keV    e-  62.1942 keV    e+  386.441 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 91     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.1_pva0.1000_density2.024
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.33077 keV    e-  64.3181 keV    e+  405.042 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 92     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.1_pva0.1000_density1.865
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.23122 keV    e-  61.3644 keV    e+  383.855 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 93     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.6_pva0.0784_density2.388
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.59518 keV    e-  70.6589 keV    e+  450.99 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 94     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.92_pva0.0771_density2.217
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.476 keV    e-  66.9628 keV    e+  427.399 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 95     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched98.31_pva0.0820_density2.104
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.41037 keV    e-  65.1879 keV    e+  413.285 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 96     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched98.31_pva0.0786_density2.198
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.476 keV    e-  66.9628 keV    e+  421.697 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 97     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.92_pva0.0783_density1.949
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.31517 keV    e-  62.1942 keV    e+  391.667 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 98     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.92_pva0.0790_density1.971
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.33077 keV    e-  63.0352 keV    e+  394.306 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 99     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.92_pva0.0780_density2.081
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.39423 keV    e-  65.1879 keV    e+  405.042 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 100     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.92_pva0.0787_density2.122
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.42661 keV    e-  65.6271 keV    e+  416.07 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 101     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched97.0_pva0.1000_density2.137
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.41037 keV    e-  66.5146 keV    e+  421.697 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 102     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.590
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.05156 keV    e-  55.8577 keV    e+  344.747 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 103     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.562
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.03782 keV    e-  55.4839 keV    e+  340.147 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 104     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.542
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.02418 keV    e-  54.7436 keV    e+  335.609 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 105     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.626
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.06538 keV    e-  56.6131 keV    e+  347.07 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 106     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.617
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.06538 keV    e-  56.6131 keV    e+  344.747 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 107     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.487
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.98381 keV    e-  54.0132 keV    e+  326.713 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 108     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.1_pva0.1000_density2.258
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.476 keV    e-  68.786 keV    e+  436.097 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 109     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.1_pva0.1000_density1.725
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.1503 keV    e-  58.5464 keV    e+  363.775 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 110     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.9_pva0.1000_density2.321
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.52639 keV    e-  69.9506 keV    e+  444.973 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 111     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.9_pva0.1000_density2.107
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.39423 keV    e-  65.6271 keV    e+  416.07 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 112     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.9_pva0.1000_density2.208
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.45942 keV    e-  67.8683 keV    e+  427.399 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 113     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.9_pva0.1000_density2.176
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.42661 keV    e-  66.9628 keV    e+  421.697 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 114     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.9_pva0.1000_density2.200
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.45942 keV    e-  67.8683 keV    e+  427.399 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 115     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.9_pva0.1000_density2.148
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.42661 keV    e-  66.9628 keV    e+  421.697 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 116     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.1_pva0.1000_density1.737
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.1503 keV    e-  58.5464 keV    e+  363.775 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 117     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.9_pva0.1000_density2.823
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.81298 keV    e-  78.6744 keV    e+  512.37 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 118     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.1_pva0.1000_density2.951
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.88957 keV    e-  80.2756 keV    e+  529.867 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 119     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.1_pva0.1000_density2.800
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.79415 keV    e-  78.1478 keV    e+  505.534 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 120     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.1_pva0.1000_density2.811
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.81298 keV    e-  78.1478 keV    e+  512.37 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 121     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.9_pva0.1000_density2.592
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.66584 keV    e-  74.559 keV    e+  479.09 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 122     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.1_pva0.1000_density1.890
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.25381 keV    e-  61.7779 keV    e+  383.855 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 123     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.1_pva0.1000_density1.911
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.26899 keV    e-  62.1942 keV    e+  386.441 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 124     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.1_pva0.1000_density1.828
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.20885 keV    e-  60.9537 keV    e+  378.733 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 125     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.1_pva0.1000_density1.974
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.29968 keV    e-  63.46 keV    e+  399.638 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 126     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.1_pva0.1000_density1.861
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.22374 keV    e-  60.9537 keV    e+  378.733 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 127     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.762
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.17938 keV    e-  59.5376 keV    e+  366.227 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 128     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.930
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.26899 keV    e-  62.4034 keV    e+  391.667 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 129     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.850
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.22374 keV    e-  60.9537 keV    e+  378.733 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 130     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched97.9_pva0.1000_density1.975
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.29968 keV    e-  63.46 keV    e+  394.306 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 131     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched97.9_pva0.1000_density1.990
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.31517 keV    e-  63.46 keV    e+  399.638 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 132     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched97.9_pva0.1000_density1.964
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.29968 keV    e-  63.46 keV    e+  394.306 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 133     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched97.9_pva0.1000_density1.947
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.29968 keV    e-  63.0352 keV    e+  394.306 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 134     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched97.9_pva0.1000_density1.991
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.33077 keV    e-  63.46 keV    e+  399.638 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 135     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched97.9_pva0.1000_density1.955
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.29968 keV    e-  63.0352 keV    e+  394.306 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 136     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched97.9_pva0.1000_density2.098
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.39423 keV    e-  65.6271 keV    e+  416.07 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 137     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched99.88_pva0.1000_density1.367
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.88004 keV    e-  51.1878 keV    e+  309.623 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 138     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.543
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.02418 keV    e-  54.7436 keV    e+  335.609 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 139     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.530
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.0039 keV    e-  54.7436 keV    e+  335.609 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 140     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.521
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.99718 keV    e-  54.7436 keV    e+  333.362 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 141     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.537
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.02418 keV    e-  54.7436 keV    e+  335.609 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 142     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.525
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.99718 keV    e-  54.7436 keV    e+  333.362 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 143     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.566
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.03782 keV    e-  55.4839 keV    e+  340.147 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 144     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.599
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.06538 keV    e-  55.8577 keV    e+  344.747 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 145     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.577
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.03782 keV    e-  55.4839 keV    e+  340.147 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 146     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.584
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.03782 keV    e-  55.4839 keV    e+  340.147 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 147     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.526
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.99718 keV    e-  54.7436 keV    e+  333.362 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 148     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.545
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.02418 keV    e-  54.7436 keV    e+  335.609 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 149     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.414
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.93123 keV    e-  52.2296 keV    e+  318.053 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 150     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.448
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.95734 keV    e-  52.9359 keV    e+  322.354 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 151     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.390
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.91187 keV    e-  51.88 keV    e+  311.709 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 152     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.300
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1.83021 keV    e-  49.831 keV    e+  301.416 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 153     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.65_pva0.1000_density1.535
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.0174 keV    e-  54.7436 keV    e+  335.609 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 154     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched96.9_pva0.1000_density2.960
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.88957 keV    e-  80.8165 keV    e+  529.867 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 155     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__se82_enriched98_pva0.0820_density2.160
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.45942 keV    e-  66.5146 keV    e+  421.697 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 156     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__mylar
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1 keV    e-  66.5146 keV    e+  405.042 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 157     used in the geometry : Yes     recalculation needed : No 
+ Material : tracking_gas
+ Range cuts        :  gamma  500 um     e-  500 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1 keV    e-  1 keV    e+  1 keV proton 100 keV
+ Region(s) which use this couple : 
+    tracker
+
+Index : 158     used in the geometry : Yes     recalculation needed : No 
+ Material : wire_metal
+ Range cuts        :  gamma  500 um     e-  500 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  14.8765 keV    e-  736.348 keV    e+  1.235 MeV proton 100 keV
+ Region(s) which use this couple : 
+    tracker
+
+Index : 159     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__copper
+ Range cuts        :  gamma  500 um     e-  500 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  17.1297 keV    e-  787.499 keV    e+  1.32079 MeV proton 100 keV
+ Region(s) which use this couple : 
+    tracker
+
+Index : 160     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__delrin
+ Range cuts        :  gamma  500 um     e-  500 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.39423 keV    e-  270.707 keV    e+  421.697 keV proton 100 keV
+ Region(s) which use this couple : 
+    tracker
+
+====================================================================
+
+HepRandomEngine::put called -- no effect!
+[notice:virtual void mctools::g4::manager::run_simulation_impl():1113] Record the final PRNG internal states after the session has stopped normaly.
+[notice:void mctools::g4::manager::run_simulation():190] Simulation stops !
+[log] [exaegir_fini]: Unloading the 'exaegir' plugin library...
+[log] [exaegir_fini]: The 'exaegir' plugin library has been unloaded.

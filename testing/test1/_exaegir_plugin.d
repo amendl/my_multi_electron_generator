@@ -1,0 +1,1 @@
+_tmp_work.d/exaegir_test1/_exaegir_plugin.d

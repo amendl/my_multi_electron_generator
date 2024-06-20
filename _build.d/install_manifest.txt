@@ -1,0 +1,8 @@
+/sps/nemo/scratch/amendl/AI/ExAegir/_install.d/lib64/libexaegir.so
+/sps/nemo/scratch/amendl/AI/ExAegir/_install.d/bin/runexaegir
+/sps/nemo/scratch/amendl/AI/ExAegir/_install.d/share/exaegir-1.0.0/config/config1.conf
+/sps/nemo/scratch/amendl/AI/ExAegir/_install.d/share/exaegir-1.0.0/config/config3.conf
+/sps/nemo/scratch/amendl/AI/ExAegir/_install.d/share/exaegir-1.0.0/config/generators.conf
+/sps/nemo/scratch/amendl/AI/ExAegir/_install.d/share/exaegir-1.0.0/config/config2.conf
+/sps/nemo/scratch/amendl/AI/ExAegir/_install.d/share/exaegir-1.0.0/data/spectrum1.data
+/sps/nemo/scratch/amendl/AI/ExAegir/_install.d/bin/exaegir-config

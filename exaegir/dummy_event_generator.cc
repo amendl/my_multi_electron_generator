@@ -17,6 +17,9 @@
 #include <genbb_help/kinematics.h>
 #include <mygsl/rng.h>
 
+
+#include <iostream>
+
 namespace exaegir {
 
   GENBB_PG_REGISTRATION_IMPLEMENT(dummy_event_generator,
@@ -51,23 +54,18 @@ namespace exaegir {
 					 datatools::service_manager & srv_mgr_,
 					 genbb::detail::pg_dict_type & pg_dict_)
   {
-    DT_THROW_IF(_initialized_, std::logic_error,
+      DT_THROW_IF(_initialized_, std::logic_error,
 		"Operation prohibited! Object is already initialized!");
     _initialize_base(config_);
 
-    if (config_.has_key("kinetic_energy")) {
-      _kinetic_energy_ = config_.fetch_real_with_explicit_dimension("kinetic_energy",
-								    "energy");
-    }
+    DT_THROW_IF(not config_.has_key("n_of_electrons"),
+		std::logic_error,
+		"Missing 'n_of_electrons' property!");
+    n_of_electrons
+      = config_.fetch_integer("n_of_electrons");
     DT_LOG_DEBUG(get_logging_priority(),
-		 "Electron kinetic energy is : " << _kinetic_energy_ / CLHEP::MeV << " MeV");
-
-    if (config_.has_key("isotropic")) {
-      _isotropic_ = config_.fetch_boolean("isotropic");
-    }
-    DT_LOG_DEBUG(get_logging_priority(),
-		 "Isotropic emission : " << std::boolalpha << _isotropic_);
-   
+   	 "N of electrons: '" << n_of_electrons<< "'");
+  
     _at_init_();
     _initialized_ = true;
     return;
@@ -91,36 +89,38 @@ namespace exaegir {
   void dummy_event_generator::_load_next(::genbb::primary_event & event_,
 					 bool compute_classification_)
   {
-    DT_LOG_TRACE_ENTERING(get_logging_priority());
+      DT_LOG_TRACE_ENTERING(get_logging_priority());
+    std::cout<<"*********\n"<<n_of_electrons<<"\n*************\n"<<std::endl;
 
     event_.reset();
     event_.set_time(0.0 * CLHEP::second);
     event_.set_label("dummy");
-    ::genbb::primary_particle & newPart = event_.add_particle();
-    newPart.set_type(::genbb::primary_particle::particle_type::ELECTRON);
-    newPart.set_pdg_code(::genbb::pdg::particle::ELECTRON);
-    newPart.set_time(0.0 * CLHEP::second);
-    // Convert kinetic energy to momentum:
-    genbb::kinematics eKinematics;
-    eKinematics.initialize_from_m_k(newPart.get_mass(), _kinetic_energy_);
-    double px = 0.0 * CLHEP::MeV;
-    double py = 0.0 * CLHEP::MeV;
-    double pz = eKinematics.p();
-    if (_isotropic_) {
-      double cosTheta = -1.0 + 2.0 * grab_external_random().uniform();
-      double sinTheta = std::sqrt(1.0 - cosTheta * cosTheta);
-      double phi = 2 * M_PI * grab_external_random().uniform();
-      px = pz * sinTheta * std::cos(phi);
-      py = pz * sinTheta * std::sin(phi);
-      pz = pz * cosTheta;
+    for(size_t i=0;i<n_of_electrons;i++) {
+	    ::genbb::primary_particle & newPart = event_.add_particle();
+	    newPart.set_type(::genbb::primary_particle::particle_type::ELECTRON);
+	    newPart.set_pdg_code(::genbb::pdg::particle::ELECTRON);
+	    newPart.set_time(0.0 * CLHEP::second);
+	    // Convert kinetic energy to momentum:
+	    genbb::kinematics eKinematics;
+	    // double kineticEnergy = _rejection_method_.shoot(grab_external_random()); // TODO
+      double kineticEnergy = (50. + grab_external_random().uniform()*1950.)*CLHEP::keV;
+	    eKinematics.initialize_from_m_k(newPart.get_mass(), kineticEnergy);
+	    double px = 0.0 * CLHEP::MeV;
+	    double py = 0.0 * CLHEP::MeV;
+	    double pz = eKinematics.p();
+	      double cosTheta = -1.0 + 2.0 * grab_external_random().uniform();
+	      double sinTheta = std::sqrt(1.0 - cosTheta * cosTheta);
+	      double phi = 2 * M_PI * grab_external_random().uniform();
+	      px = pz * sinTheta * std::cos(phi);
+	      py = pz * sinTheta * std::sin(phi);
+	      pz = pz * cosTheta;
+	    newPart.grab_momentum().setX(px);
+	    newPart.grab_momentum().setY(py);
+	    newPart.grab_momentum().setZ(pz);
     }
-    newPart.grab_momentum().setX(px);
-    newPart.grab_momentum().setY(py);
-    newPart.grab_momentum().setZ(pz);
     if (compute_classification_) {
       event_.compute_classification();
     }
-     event_.print_tree(std::cerr);
     
     DT_LOG_TRACE_EXITING(get_logging_priority());
     return;
@@ -133,8 +133,6 @@ namespace exaegir {
   
   void dummy_event_generator::_at_reset_()
   {
-    _kinetic_energy_ = 1.0 * CLHEP::MeV;
-    _isotropic_ = false;
     return;
   }
 

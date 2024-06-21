@@ -25,7 +25,7 @@ namespace exaegir {
 
     /// Destructor
     virtual ~dummy_event_generator();
-
+    
     /// Check if an external random engine can be plugged in
     bool can_external_random() const override;
 
@@ -59,8 +59,7 @@ namespace exaegir {
       
     bool _initialized_ = false; //!< Initialization flag
 
-    double _kinetic_energy_ = 1.0 * CLHEP::MeV;
-    bool _isotropic_ = false;
+    size_t n_of_electrons = 0;
     
     GENBB_PG_REGISTRATION_INTERFACE(dummy_event_generator)
       

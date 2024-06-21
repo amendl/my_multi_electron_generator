@@ -99,7 +99,7 @@ namespace exaegir {
 	    // Convert kinetic energy to momentum:
 	    genbb::kinematics eKinematics;
 	    // double kineticEnergy = _rejection_method_.shoot(grab_external_random()); // TODO
-      double kineticEnergy = 0.;
+      double kineticEnergy = 1000.;
 	    eKinematics.initialize_from_m_k(newPart.get_mass(), kineticEnergy);
 	    double px = 0.0 * CLHEP::MeV;
 	    double py = 0.0 * CLHEP::MeV;

@@ -21,7 +21,6 @@
 #include <iostream>
 
 namespace exaegir {
-
   GENBB_PG_REGISTRATION_IMPLEMENT(dummy_event_generator,
 				  "exaegir::dummy_event_generator")
     
@@ -31,7 +30,6 @@ namespace exaegir {
     _at_reset_();
     return;
   }
-
   dummy_event_generator::~dummy_event_generator()
   {
     if (_initialized_) {
@@ -39,38 +37,28 @@ namespace exaegir {
     }
     return;
   }
-
   bool dummy_event_generator::can_external_random() const
   {
     return true;
   }
-
   bool dummy_event_generator::is_initialized() const
   {
     return _initialized_;
   }
-
-  void dummy_event_generator::initialize(const datatools::properties & config_,
-					 datatools::service_manager & srv_mgr_,
-					 genbb::detail::pg_dict_type & pg_dict_)
+  void dummy_event_generator::initialize(const datatools::properties & config_, datatools::service_manager & srv_mgr_, genbb::detail::pg_dict_type & pg_dict_)
   {
       DT_THROW_IF(_initialized_, std::logic_error,
 		"Operation prohibited! Object is already initialized!");
     _initialize_base(config_);
 
-    DT_THROW_IF(not config_.has_key("n_of_electrons"),
-		std::logic_error,
-		"Missing 'n_of_electrons' property!");
-    n_of_electrons
-      = config_.fetch_integer("n_of_electrons");
-    DT_LOG_DEBUG(get_logging_priority(),
-   	 "N of electrons: '" << n_of_electrons<< "'");
+    DT_THROW_IF(not config_.has_key("n_of_electrons"), std::logic_error, "Missing 'n_of_electrons' property!");
+    n_of_electrons = config_.fetch_integer("n_of_electrons");
+    DT_LOG_DEBUG(get_logging_priority(), "N of electrons: '" << n_of_electrons<< "'");
   
     _at_init_();
     _initialized_ = true;
     return;
   }
-
   void dummy_event_generator::reset()
   {
     if (!_initialized_) {
@@ -80,17 +68,14 @@ namespace exaegir {
     _at_reset_();
     return;
   }
-
   bool dummy_event_generator::has_next()
   {
     return true;
   }
-
-  void dummy_event_generator::_load_next(::genbb::primary_event & event_,
-					 bool compute_classification_)
+  void dummy_event_generator::_load_next(::genbb::primary_event & event_, bool compute_classification_)
   {
       DT_LOG_TRACE_ENTERING(get_logging_priority());
-    std::cout<<"*********\n"<<n_of_electrons<<"\n*************\n"<<std::endl;
+    // std::cout<<"*********\n"<<n_of_electrons<<"\n*************\n"<<std::endl;
 
     event_.reset();
     event_.set_time(0.0 * CLHEP::second);
@@ -125,12 +110,10 @@ namespace exaegir {
     DT_LOG_TRACE_EXITING(get_logging_priority());
     return;
   }
- 
   void dummy_event_generator::_at_init_()
   {
     return;
   }
-  
   void dummy_event_generator::_at_reset_()
   {
     return;

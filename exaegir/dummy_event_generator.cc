@@ -37,14 +37,8 @@ namespace exaegir {
     }
     return;
   }
-  bool dummy_event_generator::can_external_random() const
-  {
-    return true;
-  }
-  bool dummy_event_generator::is_initialized() const
-  {
-    return _initialized_;
-  }
+  bool dummy_event_generator::can_external_random() const { return true; }
+  bool dummy_event_generator::is_initialized() const { return _initialized_; }
   void dummy_event_generator::initialize(const datatools::properties & config_, datatools::service_manager & srv_mgr_, genbb::detail::pg_dict_type & pg_dict_)
   {
       DT_THROW_IF(_initialized_, std::logic_error,
@@ -68,10 +62,7 @@ namespace exaegir {
     _at_reset_();
     return;
   }
-  bool dummy_event_generator::has_next()
-  {
-    return true;
-  }
+  bool dummy_event_generator::has_next() { return true; }
   void dummy_event_generator::_load_next(::genbb::primary_event & event_, bool compute_classification_)
   {
       DT_LOG_TRACE_ENTERING(get_logging_priority());
@@ -110,13 +101,6 @@ namespace exaegir {
     DT_LOG_TRACE_EXITING(get_logging_priority());
     return;
   }
-  void dummy_event_generator::_at_init_()
-  {
-    return;
-  }
-  void dummy_event_generator::_at_reset_()
-  {
-    return;
-  }
-
+  void dummy_event_generator::_at_init_() { return; }
+  void dummy_event_generator::_at_reset_() { return; }
 } // end of namespace exaegir

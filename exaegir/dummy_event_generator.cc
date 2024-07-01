@@ -21,8 +21,7 @@
 #include <iostream>
 
 namespace exaegir {
-  GENBB_PG_REGISTRATION_IMPLEMENT(dummy_event_generator,
-				  "exaegir::dummy_event_generator")
+  GENBB_PG_REGISTRATION_IMPLEMENT(dummy_event_generator, "exaegir::dummy_event_generator")
     
   dummy_event_generator::dummy_event_generator()
   {
@@ -32,9 +31,7 @@ namespace exaegir {
   }
   dummy_event_generator::~dummy_event_generator()
   {
-    if (_initialized_) {
-      reset();
-    }
+    if (_initialized)  reset(); 
     return;
   }
   bool dummy_event_generator::can_external_random() const { return true; }
@@ -65,7 +62,7 @@ namespace exaegir {
   bool dummy_event_generator::has_next() { return true; }
   void dummy_event_generator::_load_next(::genbb::primary_event & event_, bool compute_classification_)
   {
-      DT_LOG_TRACE_ENTERING(get_logging_priority());
+    DT_LOG_TRACE_ENTERING(get_logging_priority());
     // std::cout<<"*********\n"<<n_of_electrons<<"\n*************\n"<<std::endl;
 
     event_.reset();
@@ -84,12 +81,12 @@ namespace exaegir {
 	    double px = 0.0 * CLHEP::MeV;
 	    double py = 0.0 * CLHEP::MeV;
 	    double pz = eKinematics.p();
-	      double cosTheta = -1.0 + 2.0 * grab_external_random().uniform();
-	      double sinTheta = std::sqrt(1.0 - cosTheta * cosTheta);
-	      double phi = 2 * M_PI * grab_external_random().uniform();
-	      px = pz * sinTheta * std::cos(phi);
-	      py = pz * sinTheta * std::sin(phi);
-	      pz = pz * cosTheta;
+      double cosTheta = -1.0 + 2.0 * grab_external_random().uniform();
+      double sinTheta = std::sqrt(1.0 - cosTheta * cosTheta);
+      double phi = 2 * M_PI * grab_external_random().uniform();
+      px = pz * sinTheta * std::cos(phi);
+      py = pz * sinTheta * std::sin(phi);
+      pz = pz * cosTheta;
 	    newPart.grab_momentum().setX(px);
 	    newPart.grab_momentum().setY(py);
 	    newPart.grab_momentum().setZ(pz);
